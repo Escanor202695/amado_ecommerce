@@ -1,9 +1,10 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from "react";
 import Brand from "../components/reusable/Brand";
 import ShopProduct from "../components/reusable/ShopProduct";
 import Image from "next/image";
 
-function shop(props) {
+function Shop(props) {
   const [sort_by, setSort_by] = useState("Date");
   const [view, setView] = useState("6");
   const [pagiPage_num, setPagiPage] = useState("1");
@@ -13,7 +14,7 @@ function shop(props) {
       return "pagi_page activePage";
 
     return "pagi_page";
-  };
+  }; 
 
   return (
     <div className="shop">
@@ -119,4 +120,4 @@ function shop(props) {
   );
 }
 
-export default shop;
+export default Shop;
