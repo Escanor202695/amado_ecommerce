@@ -24,6 +24,7 @@ a {
 
 button {
   border: none;
+  cursor: pointer;
 }
 
 .side_nav {
@@ -510,7 +511,7 @@ input {
 .nav_carousel_img {
   position: relative;
   height: 15rem;
-  width: 11.5rem;
+  width: 12rem;
   border: 0.2rem solid transparent;
   transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -529,7 +530,7 @@ input {
 }
 
 .product_page {
-  padding: 0rem 5rem 0 2rem;
+  padding: 0rem 5rem 0 5rem;
   align-self: center;
 }
 

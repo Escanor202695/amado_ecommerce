@@ -1,8 +1,9 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from "react";
 import Image from "next/image";
 import Rating from "../components/reusable/Rating";
 
-function product(props) {
+function Product(props) {
   const [carousel_img, setCarousel_img] = useState(1);
   const [quantity, setQuantity] = useState(1);
   const filter_path = "HOME > FURNITURE > CHAIRS >";
@@ -165,4 +166,4 @@ function product(props) {
   );
 }
 
-export default product;
+export default Product;
