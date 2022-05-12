@@ -538,7 +538,7 @@ input {
 
 .product_container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .product_nav {
@@ -555,7 +555,7 @@ input {
 }
 
 .product_flex {
-  width: 55%;
+  width: 50%;
 }
 
 .cart-product {

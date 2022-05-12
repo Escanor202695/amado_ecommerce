@@ -9,7 +9,7 @@ function Product(props) {
   const filter_path = "HOME > FURNITURE > CHAIRS >";
   return (
     <div className="product_page">
-      <div className="product_nav">
+      <div className="product_nav" style={{marginLeft:'2.2rem'}}>
         {filter_path}
         <span> WHITE MODERN CHAIR </span>
       </div>

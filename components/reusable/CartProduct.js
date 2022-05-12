@@ -18,7 +18,7 @@ function CartProduct({ src, name, price }) {
             justifyContent: "space-evenly",
             height: "4rem",
             width: "12rem",
-            backgroundColor: "rgb(230, 230, 230)",
+            backgroundColor: "rgb(235,235,235)",
             margin: "0rem 0 0rem 0",
           }}
         >

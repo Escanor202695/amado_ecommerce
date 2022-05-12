@@ -13,7 +13,7 @@ function cart(props) {
               display: "flex",
               paddingLeft: "1rem",
               justifyContent: "space-around",
-              backgroundColor: "rgb(230,230,230)",
+              backgroundColor: "rgb(235,235,235)",
               padding: "1rem 0",
             }}
           >
