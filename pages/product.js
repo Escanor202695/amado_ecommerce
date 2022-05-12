@@ -149,6 +149,7 @@ function Product(props) {
             </div>
           </div>
           <button
+            className="hehe"
             style={{
               backgroundColor: "#fbb70f",
               color: "white",
@@ -157,6 +158,7 @@ function Product(props) {
               fontWeight: "bold",
               fontSize: "2rem",
             }}
+            onClick={() =>alert('Product added to cart!')}
           >
             Add To Cart
           </button>

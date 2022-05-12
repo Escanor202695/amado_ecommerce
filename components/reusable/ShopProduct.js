@@ -2,10 +2,10 @@
 import React from "react";
 import Image from "next/image";
 import Rating from "../../components/reusable/Rating";
+import Link from "next/link";
 
-const ShopProduct = ({ number }) => {
+function ShopProduct({ number }) {
   const hoveredImage = (number + 3) % 9 == 0 ? 1 : (number + 3) % 9;
-  console.log(hoveredImage);
   return (
     <div className="shop_product">
       <div style={{ position: "relative", width: "100%", height: "25vw" }}>
@@ -24,11 +24,11 @@ const ShopProduct = ({ number }) => {
         </div>
         <div className="home_product_title">
           <div className="title">Modern Chair</div>
-          <Image src="/images/cart.png" width="18rem" height="10rem" />
+          <Image src="/images/cart.png" width="18rem" height="10rem" onClick={()=>alert("Product added to cart!")} />
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default ShopProduct;

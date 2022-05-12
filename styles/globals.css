@@ -127,6 +127,7 @@ button {
   width: 100%;
   height: 100rem;
   margin-bottom: 5rem;
+  padding-left:5rem;
 }
 
 .home {
@@ -523,6 +524,7 @@ input {
 .product_page {
   padding: 0 2rem;
   flex: 1;
+  margin:10rem 0;
 }
 
 .display_container {
@@ -552,6 +554,121 @@ input {
   width: 42%;
 }
 
-.product_flex{
-  width:55%;
+.product_flex {
+  width: 55%;
+}
+
+.cart-product {
+  display: flex;
+  align-items: center;
+
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+  flex:1;
+  padding:0 5rem;
+}
+
+.cart_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.cart_list {
+  width: 60%;
+}
+
+.cart_product {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+  align-items: center;
+}
+
+.cartTable_title {
+  background-color: red;
+}
+
+.cartTable_title div {
+  font-size: 1.75rem;
+}
+
+.cartProduct_details {
+  display: flex;
+  justify-content: space-between;
+  width:70%;
+  align-items: center;
+}
+
+.payment_method{
+  width:35rem;
+  background-color:rgb(244, 244, 244);
+  padding: 4rem 4rem;
+  height:45 rem;
+}
+
+.cart_total{
+  font-size: 2rem;
+  margin-bottom:2rem;
+  font-weight: bold;
+}
+
+.cart_details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  margin:3rem 0;
+  color: rgb(109, 108, 108);
+}
+
+.checkout_btn{
+  width:100%;
+  background-color:var(--theme-yellow);
+  height:5rem;
+  font-size: 1.75rem;
+  margin-top: 5rem;
+  font-weight: bold;
+  color:rgb(244, 242, 242);
+}
+
+.checkout_btn:hover{ 
+  background-color: black;
+  color:white;
+}
+
+.input {
+  background-color:rgb(244, 242, 242);
+  height:5rem;
+  display: flex;
+  padding:0 2rem;
+  margin-bottom: 1.5rem;
+}
+
+input[type=text]{
+  background-color:transparent;
+}
+
+.checkout{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.checkout_form {
+  width: 60%;
+  margin-right: 3rem;
+}
+
+.checkout h1{
+  font-size: 3rem;
+  margin-bottom:2rem;
+}
+
+.hehe:hover{
+  background-color:black;
 }

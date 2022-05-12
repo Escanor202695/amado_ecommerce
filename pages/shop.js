@@ -1,8 +1,10 @@
+/* eslint-disable @next/next/link-passhref */
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from "react";
 import Brand from "../components/reusable/Brand";
 import ShopProduct from "../components/reusable/ShopProduct";
 import Image from "next/image";
+import Link from "next/link";
 
 function Shop(props) {
   const [sort_by, setSort_by] = useState("Date");
@@ -10,14 +12,13 @@ function Shop(props) {
   const [pagiPage_num, setPagiPage] = useState("1");
 
   const pagiPageCheck = (num) => {
-    if (num == pagiPage_num) 
-      return "pagi_page activePage";
+    if (num == pagiPage_num) return "pagi_page activePage";
 
     return "pagi_page";
-  }; 
+  };
 
   return (
-    <div className="shop">
+    <div className="shop" style={{ cursor: "pointer" }}>
       <div className="filter">
         <div className="category">
           <h3>Categories</h3>
@@ -62,10 +63,14 @@ function Shop(props) {
       <div className="shop_products">
         <div style={{ padding: "0 1.6rem" }}>
           <p style={{ fontSize: "1.5rem", margin: "10rem 0 2rem 0" }}>
-            SHOWING 1-8 0F 25
+            SHOWING 1-6 0F 6
           </p>
           <div className="menu">
-            <Image src="/images/menu.png" width="80rem" height="40rem" />
+            <Link href="/product">
+              <a>
+                <Image src="/images/menu.png" width="80rem" height="40rem" />
+              </a>
+            </Link>
             <div className="extra_filter">
               <div className="sortBy">
                 <div className="sortBy_title">Sort By :</div>
@@ -94,7 +99,9 @@ function Shop(props) {
           </div>
         </div>
         <div className="filtered_result">
-          <ShopProduct number="1" />
+          <Link href='/'>
+            <ShopProduct number="1" />
+          </Link>
           <ShopProduct number="2" />
           <ShopProduct number="3" />
           <ShopProduct number="4" />
@@ -102,18 +109,18 @@ function Shop(props) {
           <ShopProduct number="6" />
         </div>
         <div className="pagination">
-          <div className={pagiPageCheck('1')} onClick={() => setPagiPage("1")}>
+          <div className={pagiPageCheck("1")} onClick={() => setPagiPage("1")}>
             1.
           </div>
-          <div className={pagiPageCheck('2')} onClick={() => setPagiPage("2")}>
+          <div className={pagiPageCheck("2")} onClick={() => setPagiPage("2")}>
             2.
           </div>
-          <div className={pagiPageCheck('3')} onClick={() => setPagiPage("3")}>
+          <div className={pagiPageCheck("3")} onClick={() => setPagiPage("3")}>
             3.
           </div>
-          <div className={pagiPageCheck('4')} onClick={() => setPagiPage("4")}>
+          <div className={pagiPageCheck("4")} onClick={() => setPagiPage("4")}>
             4.
-          </div>          
+          </div>
         </div>
       </div>
     </div>
