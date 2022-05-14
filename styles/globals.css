@@ -97,6 +97,11 @@ button {
   background-color: var(--theme-yellow);
   font-size: 1.8rem;
   margin: 1.2rem 0;
+  transition: all 0.4s;
+}
+
+.sidebar_btn button:hover {
+  transform: scale(1.05);
 }
 
 .sidebar_opt {
@@ -127,7 +132,7 @@ button {
   width: 100%;
   height: 100rem;
   margin-bottom: 5rem;
-  padding-left:5rem;
+  padding-left: 5rem;
 }
 
 .home {
@@ -232,10 +237,11 @@ input {
   color: white;
   font-weight: 600;
   cursor: pointer;
+  transition:all 0.4s;
 }
 
 .subs_btn:hover {
-  background-color: #d39a09;
+  background-color: black;
 }
 
 .subscribe input {
@@ -335,6 +341,7 @@ input {
 .shop_products {
   flex: 1;
   padding-bottom: 5rem;
+  margin-left: 2rem;
 }
 
 .filtered_result {
@@ -524,7 +531,7 @@ input {
 .product_page {
   padding: 0 2rem;
   flex: 1;
-  margin:10rem 0;
+  margin: 10rem 0;
 }
 
 .display_container {
@@ -561,15 +568,14 @@ input {
 .cart-product {
   display: flex;
   align-items: center;
-
 }
 
 .cart {
   display: flex;
   flex-direction: column;
-justify-content: center;
-  flex:1;
-  padding:0 5rem;
+  justify-content: center;
+  flex: 1;
+  padding: 0 2vw;
 }
 
 .cart_content {
@@ -577,9 +583,8 @@ justify-content: center;
   justify-content: space-between;
 }
 
-
 .cart_list {
-  width: 60%;
+  width: 65%;
 }
 
 .cart_product {
@@ -600,20 +605,20 @@ justify-content: center;
 .cartProduct_details {
   display: flex;
   justify-content: space-between;
-  width:70%;
+  width: 70%;
   align-items: center;
 }
 
-.payment_method{
-  width:35rem;
-  background-color:rgb(244, 244, 244);
+.payment_method {
+  width: 30%;
+  background-color: rgb(244, 244, 244);
   padding: 4rem 4rem;
-  height:45 rem;
+  height: 45 rem;
 }
 
-.cart_total{
+.cart_total {
   font-size: 2rem;
-  margin-bottom:2rem;
+  margin-bottom: 2rem;
   font-weight: bold;
 }
 
@@ -621,54 +626,64 @@ justify-content: center;
   display: flex;
   justify-content: space-between;
   font-size: 1.5rem;
-  margin:3rem 0;
+  margin: 3rem 0;
   color: rgb(109, 108, 108);
 }
 
-.checkout_btn{
-  width:100%;
-  background-color:var(--theme-yellow);
-  height:5rem;
+.checkout_btn {
+  width: 100%;
+  background-color: var(--theme-yellow);
+  height: 5rem;
   font-size: 1.75rem;
   margin-top: 5rem;
   font-weight: bold;
-  color:rgb(244, 242, 242);
+  color: rgb(244, 242, 242);
+  transition:all 0.4s;
 }
 
-.checkout_btn:hover{ 
+.checkout_btn:hover {
   background-color: black;
-  color:white;
+  color: white;
 }
 
 .input {
-  background-color:rgb(244, 242, 242);
-  height:5rem;
+  background-color: rgb(244, 242, 242);
+  height: 5rem;
   display: flex;
-  padding:0 2rem;
+  padding: 0 2rem;
   margin-bottom: 1.5rem;
 }
 
-input[type=text]{
-  background-color:transparent;
+input[type="text"] {
+  background-color: transparent;
 }
 
-.checkout{
-  flex:1;
+.checkout {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0 1vw;
 }
 
-.checkout_form {
-  width: 60%;
-  margin-right: 3rem;
+.checkout_form{
+  width:65%;
 }
 
-.checkout h1{
+.checkout_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout h1 {
   font-size: 3rem;
-  margin-bottom:2rem;
+  margin-bottom: 2rem;
 }
 
-.hehe:hover{
-  background-color:black;
+.hehe{
+  transition: all 0.4s;
+}
+
+.hehe:hover {
+  background-color: black !important;
+  cursor: pointer;
 }
